@@ -1,0 +1,36 @@
+.detailsContainer {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    margin: 15px;
+    max-width: 333px;
+}
+
+.movieImage {
+    border-radius: 10px;
+    max-width: 333px;
+    height: 100%;
+    max-height: 500px;
+}
+
+.movieDetails {
+    font-size: 1.1rem;
+}
+
+.firstItem {
+    margin-top: 0;
+}
+
+.extra__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    gap: 5px;
+}
