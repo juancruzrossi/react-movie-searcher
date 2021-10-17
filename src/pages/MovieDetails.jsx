@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { getAPIData } from "../utils/httpClient";
 
 import { Spinner } from "../components/spinner/spinner"
+import { getMovieImg } from "../utils/getMovieImg";
 
 
 export function MovieDetails() {
@@ -32,7 +33,7 @@ export function MovieDetails() {
     }
     
 
-    const imageUrl = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
+    const imageUrl = getMovieImg(movie.poster_path, 500);
     return (
         <div className={styles.detailsContainer}>
             <div className={styles.col}>
